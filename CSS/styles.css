@@ -29,6 +29,7 @@ body {
   color: var(--txt-color);
   background-color: var(--main-bg-color);
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.3;
   display: flex;
   flex-direction: column;
@@ -48,12 +49,8 @@ body {
   background-size: 100dvh;
 }
 
-.header-footer p,
 .header-title {
   background-color: rgb(2, 48, 71, .8);
-}
-
-.header-title {
   color: var(--header-txt-color);
   margin-top: 40vh;
   height: 80px;
@@ -70,6 +67,10 @@ body {
   align-items: center;
 }
 
+.photo-credit {
+  background-color: rgb(111, 111, 111, .6);
+}
+
 .header-footer p {
   padding: 0 7px;
   border-radius: 3px;
@@ -82,14 +83,17 @@ body {
 
 .scroll-notice {
   text-align: center;
-  width: 70px;
+  width: 120px;
+  height: 120px;
   border: 1px solid var(--header-bg-color);
   border-radius: 50%;
   background-color: var(--header-bg-color);
+  margin-top: 20px;
 }
 
 .scroll-notice p {
   text-wrap: wrap;
   line-height: .8;
   color: var(--header-txt-color);
+  margin-top: 10px;
 }
