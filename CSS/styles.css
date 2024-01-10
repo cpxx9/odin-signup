@@ -48,8 +48,12 @@ body {
   background-size: 100dvh;
 }
 
+.header-footer p,
 .header-title {
   background-color: rgb(2, 48, 71, .8);
+}
+
+.header-title {
   color: var(--header-txt-color);
   margin-top: 40vh;
   height: 80px;
@@ -64,6 +68,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header-footer p {
+  padding: 0 7px;
+  border-radius: 3px;
 }
 
 .header-footer p,
