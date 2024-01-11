@@ -80,20 +80,3 @@ body {
 .header-footer a {
   color: #fff;
 }
-
-.scroll-notice {
-  text-align: center;
-  width: 120px;
-  height: 120px;
-  border: 1px solid var(--header-bg-color);
-  border-radius: 50%;
-  background-color: var(--header-bg-color);
-  margin-top: 20px;
-}
-
-.scroll-notice p {
-  text-wrap: wrap;
-  line-height: .8;
-  color: var(--header-txt-color);
-  margin-top: 10px;
-}
