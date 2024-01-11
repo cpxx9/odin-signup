@@ -87,6 +87,7 @@ body {
 svg {
   height: 75px;
   width: 140px;
+  position: relative;
 }
 
 svg rect {
@@ -98,4 +99,16 @@ svg text {
   font-weight: bold;
   font-size: 18px;
   fill: var(--btn-color);
+}
+
+#animated-arrow {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: bounce 3s linear infinite;
+}
+
+@keyframes bounce {
+  0% {transform: translatey(0%);}
+  50% {transform: translatey(50%);}
+  100% {transform: translatey(0%);}
 }
