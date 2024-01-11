@@ -18,8 +18,8 @@ orange: #fb8500
 }
 
 @font-face {
-  font-family: 'bungee_regular';
-  src: url('../fonts/Bungee-Regular-webfont.woff') format('woff');
+  font-family: 'ChunkFive';
+  src: url('../fonts/ChunkFive-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -68,7 +68,7 @@ body {
 .header-title > h1 {
   font-size: 3.7rem;
   margin-top: 20px;
-  font-family: "bungee_regular";
+  font-family: "ChunkFive";
 }
 
 .header-footer {
