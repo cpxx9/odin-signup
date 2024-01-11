@@ -24,6 +24,16 @@ orange: #fb8500
   font-style: normal;
 }
 
+/* Scroll Snapping
+------------------------------------------------------ */
+.scroll-container {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-child {
+  scroll-snap-align: start;
+}
+
 /* Main Styles
 ------------------------------------------------------ */
 * {
