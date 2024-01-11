@@ -17,6 +17,13 @@ orange: #fb8500
   --focus-color: #ffb703;
 }
 
+@font-face {
+  font-family: 'bungee_regular';
+  src: url('../fonts/Bungee-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 /* Main Styles
@@ -61,6 +68,7 @@ body {
 .header-title > h1 {
   font-size: 3.7rem;
   margin-top: 20px;
+  font-family: "bungee_regular";
 }
 
 .header-footer {
