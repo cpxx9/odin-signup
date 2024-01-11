@@ -24,8 +24,6 @@ orange: #fb8500
   font-style: normal;
 }
 
-
-
 /* Main Styles
 ------------------------------------------------------ */
 * {
@@ -121,4 +119,17 @@ svg text {
   0% {transform: translatey(0%);}
   50% {transform: translatey(50%);}
   100% {transform: translatey(0%);}
+}
+
+/* Desktop Styles
+------------------------------------------------------ */
+@media only screen and (min-width:900px) {
+  * {
+    visibility: hidden;
+  }
+  header::before {
+    visibility: visible;
+    content: "This site is not yet ready on dekstop. Please make your window smaller or visit on a mobile device";
+    margin-top: auto;
+  }
 }
