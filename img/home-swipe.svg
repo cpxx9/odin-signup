@@ -2,13 +2,23 @@
      xmlns="http://www.w3.org/2000/svg" 
      xmlns:xlink="http://www.w3.org/1999/xlink">
 
-  <rect width="120" height="30" x="35" y="35"
+  
+
+  <rect width="120" height="35" x="35" y="35"
         rx="20" ry="30"
         style="fill: #023047;" />
 
-  <text x="49" y="56"
+  
+  <polyline points="78,25 93,41 109,25 93,32 78,25"
+            style="fill: #fff;
+                    stroke-width: 1;
+                    stroke: #fff;"/>
+  
+
+  <text x="48" y="60"
         style="font-family: Arial;
                font-weight: bold;
-               font-size: 18px"
-  >SWIPE UP!</text>
+               font-size: 18px;
+               fill: #fb8500;"
+  >SEE MORE</text>
 </svg>
