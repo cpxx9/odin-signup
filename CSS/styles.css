@@ -97,5 +97,5 @@ svg text {
   font-family: Arial;
   font-weight: bold;
   font-size: 18px;
-  fill: #fb8500;
+  fill: var(--btn-color);
 }
