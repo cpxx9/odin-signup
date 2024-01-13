@@ -71,7 +71,6 @@ body {
 }
 
 .header-title {
-  
   color: var(--header-txt-color);
   margin-top: 35vh;
   height: 110px;
@@ -228,19 +227,122 @@ svg text {
 
 .main-form aside div {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 /* Desktop Styles
 ------------------------------------------------------ */
 @media only screen and (min-width:900px) {
-  * {
+  html,
+  body {
+    overflow-y: hidden;
+  }
+
+  body {
+    flex-direction: row;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  header.form-header.scroll-child {
+    width: 34%;
+  }
+
+  main.main-form.scroll-child {
+    width: 66%;
+    margin-bottom: 0;
+    padding-top: 200px;
+  }
+
+  main.main-form.scroll-child::before {
+    content: "This is not a real online service! Let us integrate your infrastructure with our best-in-industry security services! Sign up now to get started.";
+    font-weight: bold;
+    font-size: 18px;
+    padding-left : 40px;
+    padding-right: 300px;
+    padding-bottom: 50px;
+  }
+
+  aside.signup-form-aside div {
+    margin-bottom: 0;
+  }
+
+  .signup-form,
+  .signup-form-header {
+    border: none;
+    box-shadow: none;
+  }
+
+  .signup-form-header {
+    margin: 0;
+    text-align: left;
+    padding: 20px 40px;
+  }
+
+  .signup-form {
+    margin: 0;
+    width: 100%;
+    padding-right: 45%;
+  }
+
+  .scroll-notice {
     visibility: hidden;
   }
-  header::before {
-    visibility: visible;
-    content: "This site is not yet ready on dekstop. Please make your window smaller or visit on a mobile device";
-    margin-top: auto;
+  
+  .form-row {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .form-row input[type="text"],
+  .form-row input[type="tel"],
+  .form-row input[type="email"],
+  .form-row input[type="password"] {
+    width: 250px;
+    margin-top: 0;
+  }
+
+  form .form-row label {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  form .form-row {
+    width: 300px;
+  }
+
+  form.signup-form {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-auto-flow:dense;
+    align-items:start;
+  }
+
+  form.signup-form>* {
+    box-sizing: border-box;
+  }
+
+  aside.signup-form-aside {
+    margin-top: 30px;
+  }
+
+  aside.signup-form-aside button {
+    box-shadow: 0.3em 0.3em 1em rgb(2 48 71 / 60%);
+  }
+
+  aside.signup-form-aside div p {
+    font-weight: bolder;
+  }
+
+  aside.signup-form-aside div p a {
+    text-decoration: none;
+  }
+
+  .photo-credit {
+    position: absolute;
+    bottom: 3px;
   }
 }
-
