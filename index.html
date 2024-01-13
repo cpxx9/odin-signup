@@ -34,7 +34,9 @@
     </div>
   </header>
   <main class="main-form scroll-child">
-    <h1>Sign up now:</h1>
+    <div class="signup-form-header">
+      <h1>Sign up now:</h1>
+    </div>
     <form method="get" class="signup-form">
       <div class="form-row">
         <label for="first_name">First name</label>
@@ -64,7 +66,23 @@
           type="tel" 
           name="phone_number" 
           id="phone_number"
-          placeholder="xxx-xxx-xxxx" />
+          placeholder="(xxx)-xxx-xxxx" />
+      </div>
+      <div class="form-row">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          name="password" 
+          id="password"
+          placeholder="********" />
+      </div>
+      <div class="form-row">
+        <label for="password_confirm">Confirm password</label>
+        <input 
+          type="password" 
+          name="password_confirm" 
+          id="password_confirm"
+          placeholder="********" />
       </div>
     </form>
   </main>

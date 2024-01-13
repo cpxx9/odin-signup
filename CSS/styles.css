@@ -53,14 +53,18 @@ body {
   align-items: center;
 }
 
+.form-header,
+.main-form {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
 /* Header Styles
 ------------------------------------------------------ */
 .form-header {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  height: 100dvh;
   width: 100%;
   background: center url(../img/home-splash.jpg) no-repeat;
   background-size: 100dvh;
@@ -144,21 +148,28 @@ svg text {
 /* Form Styles
 ------------------------------------------------------ */
 .signup-form {
-  background-color: #F6F7F8;
-  border: 1px solid #D6D9DC;
-  border-radius: 5px;
-
   width: 85dvw;
-  padding: 50px;
+  padding: 30px 50px;
+  padding-bottom: 10px;
   margin: 20px 0 40px 0;
 }
 
-.main-form>h1 {
-  margin-top: 10px;
+.signup-form,
+.signup-form-header {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 5px;
+  box-shadow:
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(2 48 71 / 60%);
+}
+.signup-form-header {
+  text-align: center;
+  margin: 30px;
 }
 
 .form-row {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -167,7 +178,8 @@ svg text {
 
 .form-row input[type="text"],
 .form-row input[type="email"],
-.form-row input[type="tel"] {
+.form-row input[type="tel"],
+.form-row input[type="password"] {
   background-color: #FFF;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -176,8 +188,17 @@ svg text {
   font-size: 14px;
 }
 
+.form-row input[type="email"]::placeholder,
+.form-row input[type="tel"]::placeholder {
+  font-size: 14px;
+}
+
 .form-row label {
   margin-bottom: 12px;
+}
+
+.form-row>label[for="password_confirm"] {
+  margin-bottom: 0;
 }
 
 /* Desktop Styles
