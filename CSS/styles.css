@@ -106,7 +106,7 @@ body {
 .header-footer p {
   padding: 0 7px;
   border-radius: 3px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .header-footer p,
@@ -147,15 +147,20 @@ svg text {
 
 /* Form Styles
 ------------------------------------------------------ */
+.main-form {
+  color: var(--header-bg-color);
+}
+
 .signup-form {
   width: 85dvw;
-  padding: 30px 50px;
+  padding: 30px 40px;
   padding-bottom: 10px;
   margin: 20px 0 40px 0;
+  font-size: 18px;
 }
 
 .signup-form,
-.signup-form-header {
+.signup-form-header {  
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 5px;
@@ -201,6 +206,29 @@ svg text {
   margin-bottom: 0;
 }
 
+.main-form aside button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--btn-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.main-form aside button,
+.main-form aside div {
+  margin-left: 40px;
+}
+.main-form a {
+  color: var(--btn-color);
+}
+
+.main-form aside div {
+  font-size: 16px;
+}
+
 /* Desktop Styles
 ------------------------------------------------------ */
 @media only screen and (min-width:900px) {
@@ -213,3 +241,4 @@ svg text {
     margin-top: auto;
   }
 }
+
