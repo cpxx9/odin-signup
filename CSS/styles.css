@@ -60,6 +60,10 @@ body {
   height: 100dvh;
 }
 
+input:focus {
+  outline-color: var(--main-bg-color);
+}
+
 /* Header Styles
 ------------------------------------------------------ */
 .form-header {
