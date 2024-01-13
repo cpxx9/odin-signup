@@ -248,11 +248,11 @@ svg text {
   }
 
   header.form-header.scroll-child {
-    width: 34%;
+    width: 40%;
   }
 
   main.main-form.scroll-child {
-    width: 66%;
+    width: 60%;
     margin-bottom: 0;
     padding-top: 200px;
   }
@@ -331,6 +331,7 @@ svg text {
 
   aside.signup-form-aside button {
     box-shadow: 0.3em 0.3em 1em rgb(2 48 71 / 60%);
+    cursor: pointer;
   }
 
   aside.signup-form-aside div p {
