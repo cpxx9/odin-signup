@@ -149,7 +149,7 @@ svg text {
 ------------------------------------------------------ */
 .main-form {
   color: var(--header-bg-color);
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .signup-form {
@@ -228,6 +228,7 @@ svg text {
 
 .main-form aside div {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 /* Desktop Styles
