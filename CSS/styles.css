@@ -149,6 +149,7 @@ svg text {
 ------------------------------------------------------ */
 .main-form {
   color: var(--header-bg-color);
+  padding-top: 30px;
 }
 
 .signup-form {
