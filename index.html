@@ -37,10 +37,12 @@
     <div class="form-wrapper">
       <div class="signup-form-header">
         <h1>Sign up now:</h1>
+        <p>Required fields are followed by <span aria-label="required">*</span></p>
       </div>
       <form method="get" class="signup-form" id="signup-form">
+        
         <div class="form-row">
-          <label for="first_name">First name</label>
+          <label for="first_name">First name <span aria-label="required">*</span></label>
           <input
             type="text"
             name="first_name"
@@ -52,11 +54,10 @@
           <input
             type="text"
             name="last_name"
-            id="last_name"
-            required />
+            id="last_name" />
         </div>
         <div class="form-row">
-          <label for="email_address">Email address</label>
+          <label for="email_address">Email address <span aria-label="required">*</span></label>
           <input
             type="email"
             name="email_address"
@@ -73,7 +74,7 @@
             placeholder="(xxx)-xxx-xxxx" />
         </div>
         <div class="form-row">
-          <label for="password">Password</label>
+          <label for="password">Password <span aria-label="required">*</span></label>
           <input
             type="password"
             name="password"
@@ -82,7 +83,7 @@
             required />
         </div>
         <div class="form-row">
-          <label for="password_confirm">Confirm password</label>
+          <label for="password_confirm">Confirm password <span aria-label="required">*</span></label>
           <input
             type="password"
             name="password_confirm"

@@ -155,6 +155,10 @@ svg text {
   padding-top: 20px;
 }
 
+.main-form .signup-form-header p {
+  font-size: 12px;
+}
+
 .signup-form {
   width: 85dvw;
   padding: 30px 40px;
