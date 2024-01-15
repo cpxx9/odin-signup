@@ -347,16 +347,32 @@ aside.signup-form-aside div p a {
   }
 
   /* Animations */
+  header.form-header.scroll-child {
+    transform-box: fill-box;
+    animation: header-transform 1s linear;
+    animation-iteration-count: 1;
+  }
+  div.form-wrapper {
+    transform-box: fill-box;
+    animation: form-transform 1.5s linear;
+    animation-iteration-count: 1;
+  }
+  aside.signup-form-aside {
+    transform-box: fill-box;
+    transform-origin: 300%;
+    animation: aside-transform 1.5s linear;
+    animation-iteration-count: 1;
+  }
   @keyframes header-transform {
-    0% {transform: translatex(-300%);}
-    100% {transform: translatex(100%);}
+    0% {transform: translatex(-100%);}
+    100% {transform: translatex(0%);}
   }
   @keyframes form-transform {
-    0% {transform: translatex(300%);}
-    100% {transform: translatex(100%);}
+    0% {transform: translatey(-300%);}
+    100% {transform: translatey(0%);}
   }
   @keyframes aside-transform {
     0% {transform: translatey(300%);}
-    100% {transform: translatey(100%);}
+    100% {transform: translatey(0%);}
   }
 }
