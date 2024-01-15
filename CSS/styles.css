@@ -345,4 +345,18 @@ aside.signup-form-aside div p a {
     position: absolute;
     bottom: 3px;
   }
+
+  /* Animations */
+  @keyframes header-transform {
+    0% {transform: translatex(-300%);}
+    100% {transform: translatex(100%);}
+  }
+  @keyframes form-transform {
+    0% {transform: translatex(300%);}
+    100% {transform: translatex(100%);}
+  }
+  @keyframes aside-transform {
+    0% {transform: translatey(300%);}
+    100% {transform: translatey(100%);}
+  }
 }
