@@ -16,7 +16,6 @@ document.getElementById('password_confirm').addEventListener("keyup", validatePa
 function validatePassword() {
   let password = document.getElementById('password').value;
   let confirmPassword = document.getElementById('password_confirm').value;
-  console.log(confirmPassword);
 
   if (password != confirmPassword) {
     document.getElementById('wrong_pass_alert').style.color = 'red';
