@@ -144,6 +144,21 @@ svg text {
   100% {transform: translatey(210%);}
 }
 
+/* Expo Styles
+------------------------------------------------------ */
+.expo {
+  width: 85dvw;
+  padding-top: 15px;
+}
+
+.expo h2 {
+  font-size: 18px;
+}
+
+.spaced-h2 {
+  padding: 15px 0 30px 0;
+}
+
 /* Form Styles
 ------------------------------------------------------ */
 .main-form {
@@ -174,7 +189,7 @@ svg text {
 }
 .signup-form-header {
   text-align: center;
-  margin: 30px;
+  width: 85dvw;
 }
 
 .form-row {
@@ -201,7 +216,7 @@ svg text {
   margin-bottom: 12px;
 }
 
-.form-row>label[for="password_confirm"] {
+.form-row>label {
   margin-bottom: 0;
 }
 
@@ -346,7 +361,7 @@ aside.signup-form-aside button {
   main.main-form.scroll-child {
     width: 60%;
     margin-bottom: 0;
-    padding-top: 20%;    
+    padding-top: 10%;    
   }
 
   aside.signup-form-aside div {
@@ -453,5 +468,15 @@ aside.signup-form-aside button {
   @keyframes aside-transform {
     0% {transform: translatey(300%);}
     100% {transform: translatey(0%);}
+  }
+
+  .expo {
+    padding-left: 40px;
+    line-height: 1.9em;
+    width: 80%;
+  }
+  
+  .spaced-h2 {
+    padding: 30px 0 60px 0;
   }
 }
