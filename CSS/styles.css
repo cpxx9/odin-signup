@@ -60,10 +60,6 @@ body {
   height: 100dvh;
 }
 
-input:focus {
-  outline-color: var(--main-bg-color);
-}
-
 /* Header Styles
 ------------------------------------------------------ */
 .form-header {
@@ -201,11 +197,6 @@ svg text {
   font-size: 14px;
 }
 
-.form-row input[type="email"]::placeholder,
-.form-row input[type="tel"]::placeholder {
-  font-size: 14px;
-}
-
 .form-row label {
   margin-bottom: 12px;
 }
@@ -246,6 +237,23 @@ aside.signup-form-aside div p {
 
 aside.signup-form-aside div p a {
   text-decoration: none;
+}
+
+.form-row input[type="email"]::placeholder,
+.form-row input[type="tel"]::placeholder {
+  font-size: 14px;
+}
+
+input:focus {
+  outline-color: var(--main-bg-color);
+  box-shadow: 0.3em 0.3em 1em rgb(2 48 71 / 60%);
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid,
+.form-row input[type="tel"]:invalid,
+.form-row input[type="password"]:invalid {
+  outline-color: var(--focus-color);
 }
 
 /* Global Animations
