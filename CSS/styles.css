@@ -271,15 +271,6 @@ aside.signup-form-aside div p a {
     padding-top: 20%;    
   }
 
-  /* main.main-form.scroll-child::before {
-    content: "This is not a real online service! Let us integrate your infrastructure with our best-in-industry security services! Sign up now to get started.";
-    font-weight: bold;
-    font-size: 18px;
-    padding-left : 40px;
-    padding-right: 300px;
-    padding-bottom: 50px;
-  } */
-
   aside.signup-form-aside div {
     margin-bottom: 0;
   }
