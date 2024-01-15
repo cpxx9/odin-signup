@@ -470,10 +470,20 @@ aside.signup-form-aside button {
     100% {transform: translatey(0%);}
   }
 
+  @keyframes expo-fade {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
   .expo {
     padding-left: 40px;
     line-height: 1.9em;
     width: 80%;
+    animation: expo-fade 3s;
+    animation-iteration-count: 1;
   }
   
   .spaced-h2 {
